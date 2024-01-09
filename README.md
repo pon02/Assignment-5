@@ -1,7 +1,7 @@
 # Assignment-5
 ## URL
 Uniform Resource Locatorの略語で、Webサイトのページがどこに位置するのかを示す「住所」のような意味合いで使用される。  
-URLは `http://` や `HTTPS://`などのプロトコルから始まり、その後にドメイン名（Webサイトの名前）が続く形で構成されている。
+URLは `http://` や `https://`などのプロトコルから始まり、その後にドメイン名（Webサイトの名前）が続く形で構成されている。
 
 >URL→（住所全体）：東京都千代田区千代田1-1  
 >ドメイン名(サーバー名）→（地名）：東京都千代田区  
@@ -15,7 +15,7 @@ URLは `http://` や `HTTPS://`などのプロトコルから始まり、その�
 * アクティブパラメーター  
 表示されるコンテンツに影響し、パラメーターを付け加えることによりフィルタリングや並び替えなど、Webサイトの表示内容を任意に変更することができる。
 ## パス変数
-環境変数[^1]で設定できる変数の一つで、ファイルやフォルダの置いておる場所を示す情報を保存する。  
+環境変数[^1]で設定できる変数の一つで、ファイルやフォルダの置いてある場所を示す情報を保存する。  
 [^1]:環境変数とはPCのいろんな情報を保存しておけるメモのようなもので、OSが動いている時に使える変数。  
 OSに保存するためコンピューター上で動くすべてのプログラムが共有して利用できる。
 ## クエリ文字列とパス変数の違い
@@ -54,12 +54,12 @@ HTTPリクエストは以下の３つの部品から成り立ち、
   3.リダイレクトメッセージ(300-399)  
   4.クライアントエラーレスポンス(400-499)  
   5.サーバーエラーレスポンス(500-599)  
-  * 200　OK:  
+  * 200 OK:  
 リクエストが成功したことを示す。
-  * 201　Created:  
+  * 201 Created:  
 リクエストは成功し、その結果新たなリソースが作成されたことを示す。  
 一般的にPOSTや一部のPUTリクエストを送信した後のレスポンスとなる。
-  * 400　Bad Request:  
+  * 400 Bad Request:  
 構文が無効であるためサーバーがリクエストを理解できないことを示す。
   * 404 Not Found:  
 サーバーがリクエストされたリソースを発見できないことを示す。  
@@ -89,11 +89,11 @@ JavaScript Object Notationの略で、JavaScriptと相性のよいファイル�
 
 対応している主な型は文字列型、数値型、論理型、nullの４つで、文字列以外を使用する際には””は不要となる。  
 
-```
+```json
 {
- {"Number":1,"Prefecture":Nagano,"Famous Noodles":"Soba"}
- {"Number":2,"Prefecture":Kagawa,"Famous Noodles":"Udon"}
- {"Number":3,"Prefecture":Fukuoka,"Famous Noodles":"Tonkotsu ramen"}
- {"Number":3,"Prefecture":Osaka,"Famous Noodles":null}
+ {"Number":1,"Prefecture":"Nagano","Famous Noodles":"Soba"}
+ {"Number":2,"Prefecture":"Kagawa","Famous Noodles":"Udon"}
+ {"Number":3,"Prefecture":"Fukuoka","Famous Noodles":"Tonkotsu ramen"}
+ {"Number":3,"Prefecture":"Osaka","Famous Noodles":null}
 }
 ```
